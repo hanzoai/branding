@@ -118,8 +118,8 @@ const config = createGuiConfig({
     // neutral, secondary, info, success, warning, danger — pick up defaults
   },
   fonts: {
-    body:    { family: '"Inter", sans-serif', size: { ... }, ... },
-    heading: { family: '"Inter", sans-serif', size: { ... }, ... },
+    body:    { family: '"Zen", sans-serif', size: { ... }, ... },
+    heading: { family: '"Zen", sans-serif', size: { ... }, ... },
     mono:    { family: '"JetBrains Mono", monospace', size: { ... }, ... },
   },
   // pick up defaults for 'size' and 'space'
