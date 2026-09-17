@@ -24,7 +24,7 @@
     "dist"
   ],
   "scripts": {
-    "tc": "tsc --noEmit",
+    "tc": "node_modules/tsgo/bin/tsc --noEmit --incremental false",
     "build": "rm -rf dist && tsc && tsup src/hanzo-ui/generate-palettes.ts --format cjs,esm --dts --outDir dist/hanzo-ui && cp src/hanzo-ui/shadcn-semantic-colors.css dist/hanzo-ui/ && node scripts/prepare-dist.mjs",
     "pub": "./scripts/publish.sh"
   },
@@ -41,7 +41,8 @@
     "@types/node": "^25.6.0",
     "@types/react": "^19.2.4",
     "tsup": "^8.0.0",
-    "typescript": "^5.9.3"
+    "tsgo": "npm:typescript@7.0.2",
+    "typescript": "6.0.3"
   },
   "author": "Hanzo AI",
   "license": "MIT",
